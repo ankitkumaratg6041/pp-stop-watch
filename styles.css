@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --danger: rgb(213, 9, 9);
+    --warning: rgb(231, 231, 5);
+    --success: rgb(1, 134, 1);
+
+    --war-text: black;
+}
+
+body{
+    background-color: #393E46;
+}
+
+p {
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 5rem;
+    color: #4ECCA3;
+}
+
+.timer{
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 768px;
+    margin: 5rem auto;
+    box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 3px 3px black;
+}
+
+.btns{
+    display: flex;
+}
+
+.btns button{
+    height: 4rem;
+    width: 9rem;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 3px 3px black;
+    margin: 3% 2%;
+}
+
+.btns button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.start{
+    background-color: var(--success);
+}
+
+.btns .pause{
+    background-color: var(--warning);
+    /* color: var(--war-text); */
+}
+
+.reset{
+    background-color: var(--danger);
+}
+
+
+@media screen and (max-width: 768px){
+    .timer{
+        width: 565px;
+    }
+}
